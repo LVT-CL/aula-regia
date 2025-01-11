@@ -1,4 +1,14 @@
 
+-- Eliminar tablas si existen (para recrear el modelo desde cero)
+DROP TABLE IF EXISTS designaciones CASCADE;
+DROP TABLE IF EXISTS afiliaciones CASCADE;
+DROP TABLE IF EXISTS cargos CASCADE;
+DROP TABLE IF EXISTS organizaciones CASCADE;
+DROP TABLE IF EXISTS direcciones CASCADE;
+DROP TABLE IF EXISTS correos CASCADE;
+DROP TABLE IF EXISTS telefonos CASCADE;
+DROP TABLE IF EXISTS personas CASCADE;
+
 -- Crear tabla principal de Personas
 CREATE TABLE personas (
     id SERIAL PRIMARY KEY,
@@ -64,8 +74,8 @@ CREATE TABLE organizaciones (
     fecha_actualizacion TIMESTAMP DEFAULT CURRENT_TIMESTAMP
 );
 
--- Crear tabla para Niveles de Acceso
-CREATE TABLE niveles_acceso (
+-- Crear tabla para Cargos
+CREATE TABLE cargos (
     id SERIAL PRIMARY KEY,
     organizacion_id INT NOT NULL REFERENCES organizaciones(id) ON DELETE CASCADE,
     nombre VARCHAR(255) NOT NULL,
@@ -79,7 +89,6 @@ CREATE TABLE afiliaciones (
     id SERIAL PRIMARY KEY,
     persona_id INT NOT NULL REFERENCES personas(id) ON DELETE CASCADE,
     organizacion_id INT NOT NULL REFERENCES organizaciones(id) ON DELETE CASCADE,
-    nivel_acceso_id INT REFERENCES niveles_acceso(id) ON DELETE SET NULL,
     fecha_inicio_afiliacion DATE NOT NULL,
     fecha_fin_afiliacion DATE,
     es_principal BOOLEAN DEFAULT TRUE
@@ -88,3 +97,12 @@ CREATE TABLE afiliaciones (
 -- Crear índice parcial para garantizar una única afiliación activa por persona y organización
 CREATE UNIQUE INDEX unico_afiliacion_principal ON afiliaciones (persona_id, organizacion_id)
 WHERE es_principal = TRUE;
+
+-- Crear tabla para Designaciones
+CREATE TABLE designaciones (
+    id SERIAL PRIMARY KEY,
+    afiliacion_id INT NOT NULL REFERENCES afiliaciones(id) ON DELETE CASCADE,
+    cargo_id INT NOT NULL REFERENCES cargos(id) ON DELETE CASCADE,
+    fecha_inicio DATE NOT NULL,
+    fecha_fin DATE
+);
