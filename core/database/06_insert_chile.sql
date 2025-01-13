@@ -385,129 +385,129 @@ BEGIN
     -- Insert comunas for Región de Arica y Parinacota
     INSERT INTO niveles_administrativos (estructura_nivel_id, nombre, numeracion, orden, padre_id)
     VALUES
-        (estructura_comuna_id, 'Comuna de Arica', NULL, 1, provincia_arica),
-        (estructura_comuna_id, 'Comuna de Camarones', NULL, 2, provincia_arica),
-        (estructura_comuna_id, 'Comuna de Putre', NULL, 1, provincia_parinacota),
-        (estructura_comuna_id, 'Comuna de General Lagos', NULL, 2, provincia_parinacota);
+        (estructura_comuna_id, 'Arica', NULL, 1, provincia_arica),
+        (estructura_comuna_id, 'Camarones', NULL, 2, provincia_arica),
+        (estructura_comuna_id, 'Putre', NULL, 1, provincia_parinacota),
+        (estructura_comuna_id, 'General Lagos', NULL, 2, provincia_parinacota);
 
     -- Insert comunas for Región de Tarapacá
     INSERT INTO niveles_administrativos (estructura_nivel_id, nombre, numeracion, orden, padre_id)
     VALUES
-        (estructura_comuna_id, 'Comuna de Iquique', NULL, 1, provincia_iquique),
-        (estructura_comuna_id, 'Comuna de Alto Hospicio', NULL, 2, provincia_iquique),
-        (estructura_comuna_id, 'Comuna de Pozo Almonte', NULL, 1, provincia_tamarugal),
-        (estructura_comuna_id, 'Comuna de Camiña', NULL, 2, provincia_tamarugal),
-        (estructura_comuna_id, 'Comuna de Colchane', NULL, 3, provincia_tamarugal),
-        (estructura_comuna_id, 'Comuna de Huara', NULL, 4, provincia_tamarugal),
-        (estructura_comuna_id, 'Comuna de Pica', NULL, 5, provincia_tamarugal);
+        (estructura_comuna_id, 'Iquique', NULL, 1, provincia_iquique),
+        (estructura_comuna_id, 'Alto Hospicio', NULL, 2, provincia_iquique),
+        (estructura_comuna_id, 'Pozo Almonte', NULL, 1, provincia_tamarugal),
+        (estructura_comuna_id, 'Camiña', NULL, 2, provincia_tamarugal),
+        (estructura_comuna_id, 'Colchane', NULL, 3, provincia_tamarugal),
+        (estructura_comuna_id, 'Huara', NULL, 4, provincia_tamarugal),
+        (estructura_comuna_id, 'Pica', NULL, 5, provincia_tamarugal);
 
     -- Insert comunas for Región de Antofagasta
     INSERT INTO niveles_administrativos (estructura_nivel_id, nombre, numeracion, orden, padre_id)
     VALUES
-        (estructura_comuna_id, 'Comuna de Antofagasta', NULL, 1, provincia_antofagasta),
-        (estructura_comuna_id, 'Comuna de Mejillones', NULL, 2, provincia_antofagasta),
-        (estructura_comuna_id, 'Comuna de Sierra Gorda', NULL, 3, provincia_antofagasta),
-        (estructura_comuna_id, 'Comuna de Taltal', NULL, 4, provincia_antofagasta),
-        (estructura_comuna_id, 'Comuna de Calama', NULL, 1, provincia_eloa),
-        (estructura_comuna_id, 'Comuna de Ollagüe', NULL, 2, provincia_eloa),
-        (estructura_comuna_id, 'Comuna de San Pedro de Atacama', NULL, 3, provincia_eloa),
-        (estructura_comuna_id, 'Comuna de Tocopilla', NULL, 1, provincia_tocopilla),
-        (estructura_comuna_id, 'Comuna de María Elena', NULL, 2, provincia_tocopilla);
+        (estructura_comuna_id, 'Antofagasta', NULL, 1, provincia_antofagasta),
+        (estructura_comuna_id, 'Mejillones', NULL, 2, provincia_antofagasta),
+        (estructura_comuna_id, 'Sierra Gorda', NULL, 3, provincia_antofagasta),
+        (estructura_comuna_id, 'Taltal', NULL, 4, provincia_antofagasta),
+        (estructura_comuna_id, 'Calama', NULL, 1, provincia_eloa),
+        (estructura_comuna_id, 'Ollagüe', NULL, 2, provincia_eloa),
+        (estructura_comuna_id, 'San Pedro de Atacama', NULL, 3, provincia_eloa),
+        (estructura_comuna_id, 'Tocopilla', NULL, 1, provincia_tocopilla),
+        (estructura_comuna_id, 'María Elena', NULL, 2, provincia_tocopilla);
 
     -- Insert comunas for Región de Atacama
     INSERT INTO niveles_administrativos (estructura_nivel_id, nombre, numeracion, orden, padre_id)
     VALUES
-        (estructura_comuna_id, 'Comuna de Copiapó', NULL, 1, provincia_copiapo),
-        (estructura_comuna_id, 'Comuna de Caldera', NULL, 2, provincia_copiapo),
-        (estructura_comuna_id, 'Comuna de Tierra Amarilla', NULL, 3, provincia_copiapo),
-        (estructura_comuna_id, 'Comuna de Chañaral', NULL, 1, provincia_chañaral),
-        (estructura_comuna_id, 'Comuna de Diego de Almagro', NULL, 2, provincia_chañaral),
-        (estructura_comuna_id, 'Comuna de Vallenar', NULL, 1, provincia_huasco),
-        (estructura_comuna_id, 'Comuna de Alto del Carmen', NULL, 2, provincia_huasco),
-        (estructura_comuna_id, 'Comuna de Freirina', NULL, 3, provincia_huasco),
-        (estructura_comuna_id, 'Comuna de Huasco', NULL, 4, provincia_huasco);
+        (estructura_comuna_id, 'Copiapó', NULL, 1, provincia_copiapo),
+        (estructura_comuna_id, 'Caldera', NULL, 2, provincia_copiapo),
+        (estructura_comuna_id, 'Tierra Amarilla', NULL, 3, provincia_copiapo),
+        (estructura_comuna_id, 'Chañaral', NULL, 1, provincia_chañaral),
+        (estructura_comuna_id, 'Diego de Almagro', NULL, 2, provincia_chañaral),
+        (estructura_comuna_id, 'Vallenar', NULL, 1, provincia_huasco),
+        (estructura_comuna_id, 'Alto del Carmen', NULL, 2, provincia_huasco),
+        (estructura_comuna_id, 'Freirina', NULL, 3, provincia_huasco),
+        (estructura_comuna_id, 'Huasco', NULL, 4, provincia_huasco);
 
     -- Insert comunas for Región de Coquimbo
     INSERT INTO niveles_administrativos (estructura_nivel_id, nombre, numeracion, orden, padre_id)
     VALUES
         -- Provincia de Elqui
-        (estructura_comuna_id, 'Comuna de La Serena', NULL, 1, provincia_elqui),
-        (estructura_comuna_id, 'Comuna de Coquimbo', NULL, 2, provincia_elqui),
-        (estructura_comuna_id, 'Comuna de Andacollo', NULL, 3, provincia_elqui),
-        (estructura_comuna_id, 'Comuna de La Higuera', NULL, 4, provincia_elqui),
-        (estructura_comuna_id, 'Comuna de Paihuano', NULL, 5, provincia_elqui),
-        (estructura_comuna_id, 'Comuna de Vicuña', NULL, 6, provincia_elqui),
+        (estructura_comuna_id, 'La Serena', NULL, 1, provincia_elqui),
+        (estructura_comuna_id, 'Coquimbo', NULL, 2, provincia_elqui),
+        (estructura_comuna_id, 'Andacollo', NULL, 3, provincia_elqui),
+        (estructura_comuna_id, 'La Higuera', NULL, 4, provincia_elqui),
+        (estructura_comuna_id, 'Paihuano', NULL, 5, provincia_elqui),
+        (estructura_comuna_id, 'Vicuña', NULL, 6, provincia_elqui),
 
         -- Provincia de Choapa
-        (estructura_comuna_id, 'Comuna de Illapel', NULL, 1, provincia_choapa),
-        (estructura_comuna_id, 'Comuna de Canela', NULL, 2, provincia_choapa),
-        (estructura_comuna_id, 'Comuna de Los Vilos', NULL, 3, provincia_choapa),
-        (estructura_comuna_id, 'Comuna de Salamanca', NULL, 4, provincia_choapa),
+        (estructura_comuna_id, 'Illapel', NULL, 1, provincia_choapa),
+        (estructura_comuna_id, 'Canela', NULL, 2, provincia_choapa),
+        (estructura_comuna_id, 'Los Vilos', NULL, 3, provincia_choapa),
+        (estructura_comuna_id, 'Salamanca', NULL, 4, provincia_choapa),
 
         -- Provincia de Limarí
-        (estructura_comuna_id, 'Comuna de Ovalle', NULL, 1, provincia_limari),
-        (estructura_comuna_id, 'Comuna de Combarbalá', NULL, 2, provincia_limari),
-        (estructura_comuna_id, 'Comuna de Monte Patria', NULL, 3, provincia_limari),
-        (estructura_comuna_id, 'Comuna de Punitaqui', NULL, 4, provincia_limari),
-        (estructura_comuna_id, 'Comuna de Río Hurtado', NULL, 5, provincia_limari);
+        (estructura_comuna_id, 'Ovalle', NULL, 1, provincia_limari),
+        (estructura_comuna_id, 'Combarbalá', NULL, 2, provincia_limari),
+        (estructura_comuna_id, 'Monte Patria', NULL, 3, provincia_limari),
+        (estructura_comuna_id, 'Punitaqui', NULL, 4, provincia_limari),
+        (estructura_comuna_id, 'Río Hurtado', NULL, 5, provincia_limari);
 
 
     -- Insert comunas for Región de Valparaíso
     INSERT INTO niveles_administrativos (estructura_nivel_id, nombre, numeracion, orden, padre_id)
     VALUES
         -- Provincia de Valparaíso
-        (estructura_comuna_id, 'Comuna de Valparaíso', NULL, 1, provincia_valparaiso),
-        (estructura_comuna_id, 'Comuna de Casablanca', NULL, 2, provincia_valparaiso),
-        (estructura_comuna_id, 'Comuna de Concón', NULL, 3, provincia_valparaiso),
-        (estructura_comuna_id, 'Comuna de Juan Fernández', NULL, 4, provincia_valparaiso),
-        (estructura_comuna_id, 'Comuna de Puchuncaví', NULL, 5, provincia_valparaiso),
-        (estructura_comuna_id, 'Comuna de Quintero', NULL, 6, provincia_valparaiso),
-        (estructura_comuna_id, 'Comuna de Viña del Mar', NULL, 7, provincia_valparaiso),
+        (estructura_comuna_id, 'Valparaíso', NULL, 1, provincia_valparaiso),
+        (estructura_comuna_id, 'Casablanca', NULL, 2, provincia_valparaiso),
+        (estructura_comuna_id, 'Concón', NULL, 3, provincia_valparaiso),
+        (estructura_comuna_id, 'Juan Fernández', NULL, 4, provincia_valparaiso),
+        (estructura_comuna_id, 'Puchuncaví', NULL, 5, provincia_valparaiso),
+        (estructura_comuna_id, 'Quintero', NULL, 6, provincia_valparaiso),
+        (estructura_comuna_id, 'Viña del Mar', NULL, 7, provincia_valparaiso),
 
         -- Provincia de Isla de Pascua
-        (estructura_comuna_id, 'Comuna de Isla de Pascua', NULL, 1, provincia_isla_pascua),
+        (estructura_comuna_id, 'Isla de Pascua', NULL, 1, provincia_isla_pascua),
 
         -- Provincia de Los Andes
-        (estructura_comuna_id, 'Comuna de Los Andes', NULL, 1, provincia_los_andes),
-        (estructura_comuna_id, 'Comuna de Calle Larga', NULL, 2, provincia_los_andes),
-        (estructura_comuna_id, 'Comuna de Rinconada', NULL, 3, provincia_los_andes),
-        (estructura_comuna_id, 'Comuna de San Esteban', NULL, 4, provincia_los_andes),
+        (estructura_comuna_id, 'Los Andes', NULL, 1, provincia_los_andes),
+        (estructura_comuna_id, 'Calle Larga', NULL, 2, provincia_los_andes),
+        (estructura_comuna_id, 'Rinconada', NULL, 3, provincia_los_andes),
+        (estructura_comuna_id, 'San Esteban', NULL, 4, provincia_los_andes),
 
         -- Provincia de Petorca
-        (estructura_comuna_id, 'Comuna de La Ligua', NULL, 1, provincia_petorca),
-        (estructura_comuna_id, 'Comuna de Cabildo', NULL, 2, provincia_petorca),
-        (estructura_comuna_id, 'Comuna de Papudo', NULL, 3, provincia_petorca),
-        (estructura_comuna_id, 'Comuna de Petorca', NULL, 4, provincia_petorca),
-        (estructura_comuna_id, 'Comuna de Zapallar', NULL, 5, provincia_petorca),
+        (estructura_comuna_id, 'La Ligua', NULL, 1, provincia_petorca),
+        (estructura_comuna_id, 'Cabildo', NULL, 2, provincia_petorca),
+        (estructura_comuna_id, 'Papudo', NULL, 3, provincia_petorca),
+        (estructura_comuna_id, 'Petorca', NULL, 4, provincia_petorca),
+        (estructura_comuna_id, 'Zapallar', NULL, 5, provincia_petorca),
 
         -- Provincia de Quillota
-        (estructura_comuna_id, 'Comuna de Quillota', NULL, 1, provincia_quillota),
-        (estructura_comuna_id, 'Comuna de La Calera', NULL, 2, provincia_quillota),
-        (estructura_comuna_id, 'Comuna de Hijuelas', NULL, 3, provincia_quillota),
-        (estructura_comuna_id, 'Comuna de La Cruz', NULL, 4, provincia_quillota),
-        (estructura_comuna_id, 'Comuna de Nogales', NULL, 5, provincia_quillota),
+        (estructura_comuna_id, 'Quillota', NULL, 1, provincia_quillota),
+        (estructura_comuna_id, 'La Calera', NULL, 2, provincia_quillota),
+        (estructura_comuna_id, 'Hijuelas', NULL, 3, provincia_quillota),
+        (estructura_comuna_id, 'La Cruz', NULL, 4, provincia_quillota),
+        (estructura_comuna_id, 'Nogales', NULL, 5, provincia_quillota),
 
         -- Provincia de San Antonio
-        (estructura_comuna_id, 'Comuna de San Antonio', NULL, 1, provincia_san_antonio),
-        (estructura_comuna_id, 'Comuna de Algarrobo', NULL, 2, provincia_san_antonio),
-        (estructura_comuna_id, 'Comuna de Cartagena', NULL, 3, provincia_san_antonio),
-        (estructura_comuna_id, 'Comuna de El Quisco', NULL, 4, provincia_san_antonio),
-        (estructura_comuna_id, 'Comuna de El Tabo', NULL, 5, provincia_san_antonio),
-        (estructura_comuna_id, 'Comuna de Santo Domingo', NULL, 6, provincia_san_antonio),
+        (estructura_comuna_id, 'San Antonio', NULL, 1, provincia_san_antonio),
+        (estructura_comuna_id, 'Algarrobo', NULL, 2, provincia_san_antonio),
+        (estructura_comuna_id, 'Cartagena', NULL, 3, provincia_san_antonio),
+        (estructura_comuna_id, 'El Quisco', NULL, 4, provincia_san_antonio),
+        (estructura_comuna_id, 'El Tabo', NULL, 5, provincia_san_antonio),
+        (estructura_comuna_id, 'Santo Domingo', NULL, 6, provincia_san_antonio),
 
         -- Provincia de San Felipe de Aconcagua
-        (estructura_comuna_id, 'Comuna de San Felipe', NULL, 1, provincia_san_felipe_de_aconcagua),
-        (estructura_comuna_id, 'Comuna de Catemu', NULL, 2, provincia_san_felipe_de_aconcagua),
-        (estructura_comuna_id, 'Comuna de Llay Llay', NULL, 3, provincia_san_felipe_de_aconcagua),
-        (estructura_comuna_id, 'Comuna de Panquehue', NULL, 4, provincia_san_felipe_de_aconcagua),
-        (estructura_comuna_id, 'Comuna de Putaendo', NULL, 5, provincia_san_felipe_de_aconcagua),
-        (estructura_comuna_id, 'Comuna de Santa María', NULL, 6, provincia_san_felipe_de_aconcagua),
+        (estructura_comuna_id, 'San Felipe', NULL, 1, provincia_san_felipe_de_aconcagua),
+        (estructura_comuna_id, 'Catemu', NULL, 2, provincia_san_felipe_de_aconcagua),
+        (estructura_comuna_id, 'Llay Llay', NULL, 3, provincia_san_felipe_de_aconcagua),
+        (estructura_comuna_id, 'Panquehue', NULL, 4, provincia_san_felipe_de_aconcagua),
+        (estructura_comuna_id, 'Putaendo', NULL, 5, provincia_san_felipe_de_aconcagua),
+        (estructura_comuna_id, 'Santa María', NULL, 6, provincia_san_felipe_de_aconcagua),
 
         -- Provincia de Marga Marga
-        (estructura_comuna_id, 'Comuna de Quilpué', NULL, 1, provincia_marga_marga),
-        (estructura_comuna_id, 'Comuna de Limache', NULL, 2, provincia_marga_marga),
-        (estructura_comuna_id, 'Comuna de Olmué', NULL, 3, provincia_marga_marga),
-        (estructura_comuna_id, 'Comuna de Villa Alemana', NULL, 4, provincia_marga_marga);
+        (estructura_comuna_id, 'Quilpué', NULL, 1, provincia_marga_marga),
+        (estructura_comuna_id, 'Limache', NULL, 2, provincia_marga_marga),
+        (estructura_comuna_id, 'Olmué', NULL, 3, provincia_marga_marga),
+        (estructura_comuna_id, 'Villa Alemana', NULL, 4, provincia_marga_marga);
 
 
 
@@ -515,366 +515,400 @@ BEGIN
     INSERT INTO niveles_administrativos (estructura_nivel_id, nombre, numeracion, orden, padre_id)
     VALUES
         -- Provincia de Cachapoal
-        (estructura_comuna_id, 'Comuna de Rancagua', NULL, 1, provincia_cachapoal),
-        (estructura_comuna_id, 'Comuna de Codegua', NULL, 2, provincia_cachapoal),
-        (estructura_comuna_id, 'Comuna de Coinco', NULL, 3, provincia_cachapoal),
-        (estructura_comuna_id, 'Comuna de Coltauco', NULL, 4, provincia_cachapoal),
-        (estructura_comuna_id, 'Comuna de Doñihue', NULL, 5, provincia_cachapoal),
-        (estructura_comuna_id, 'Comuna de Graneros', NULL, 6, provincia_cachapoal),
-        (estructura_comuna_id, 'Comuna de Las Cabras', NULL, 7, provincia_cachapoal),
-        (estructura_comuna_id, 'Comuna de Machalí', NULL, 8, provincia_cachapoal),
-        (estructura_comuna_id, 'Comuna de Malloa', NULL, 9, provincia_cachapoal),
-        (estructura_comuna_id, 'Comuna de Mostazal', NULL, 10, provincia_cachapoal),
-        (estructura_comuna_id, 'Comuna de Olivar', NULL, 11, provincia_cachapoal),
-        (estructura_comuna_id, 'Comuna de Peumo', NULL, 12, provincia_cachapoal),
-        (estructura_comuna_id, 'Comuna de Pichidegua', NULL, 13, provincia_cachapoal),
-        (estructura_comuna_id, 'Comuna de Quinta de Tilcoco', NULL, 14, provincia_cachapoal),
-        (estructura_comuna_id, 'Comuna de Rengo', NULL, 15, provincia_cachapoal),
-        (estructura_comuna_id, 'Comuna de Requínoa', NULL, 16, provincia_cachapoal),
-        (estructura_comuna_id, 'Comuna de San Vicente de Tagua Tagua', NULL, 17, provincia_cachapoal),
+        (estructura_comuna_id, 'Rancagua', NULL, 1, provincia_cachapoal),
+        (estructura_comuna_id, 'Codegua', NULL, 2, provincia_cachapoal),
+        (estructura_comuna_id, 'Coinco', NULL, 3, provincia_cachapoal),
+        (estructura_comuna_id, 'Coltauco', NULL, 4, provincia_cachapoal),
+        (estructura_comuna_id, 'Doñihue', NULL, 5, provincia_cachapoal),
+        (estructura_comuna_id, 'Graneros', NULL, 6, provincia_cachapoal),
+        (estructura_comuna_id, 'Las Cabras', NULL, 7, provincia_cachapoal),
+        (estructura_comuna_id, 'Machalí', NULL, 8, provincia_cachapoal),
+        (estructura_comuna_id, 'Malloa', NULL, 9, provincia_cachapoal),
+        (estructura_comuna_id, 'Mostazal', NULL, 10, provincia_cachapoal),
+        (estructura_comuna_id, 'Olivar', NULL, 11, provincia_cachapoal),
+        (estructura_comuna_id, 'Peumo', NULL, 12, provincia_cachapoal),
+        (estructura_comuna_id, 'Pichidegua', NULL, 13, provincia_cachapoal),
+        (estructura_comuna_id, 'Quinta de Tilcoco', NULL, 14, provincia_cachapoal),
+        (estructura_comuna_id, 'Rengo', NULL, 15, provincia_cachapoal),
+        (estructura_comuna_id, 'Requínoa', NULL, 16, provincia_cachapoal),
+        (estructura_comuna_id, 'San Vicente de Tagua Tagua', NULL, 17, provincia_cachapoal),
 
         -- Provincia Cardenal Caro
-        (estructura_comuna_id, 'Comuna de Pichilemu', NULL, 1, provincia_cardenal_caro),
-        (estructura_comuna_id, 'Comuna de La Estrella', NULL, 2, provincia_cardenal_caro),
-        (estructura_comuna_id, 'Comuna de Litueche', NULL, 3, provincia_cardenal_caro),
-        (estructura_comuna_id, 'Comuna de Marchihue', NULL, 4, provincia_cardenal_caro),
-        (estructura_comuna_id, 'Comuna de Navidad', NULL, 5, provincia_cardenal_caro),
-        (estructura_comuna_id, 'Comuna de Paredones', NULL, 6, provincia_cardenal_caro),
+        (estructura_comuna_id, 'Pichilemu', NULL, 1, provincia_cardenal_caro),
+        (estructura_comuna_id, 'La Estrella', NULL, 2, provincia_cardenal_caro),
+        (estructura_comuna_id, 'Litueche', NULL, 3, provincia_cardenal_caro),
+        (estructura_comuna_id, 'Marchihue', NULL, 4, provincia_cardenal_caro),
+        (estructura_comuna_id, 'Navidad', NULL, 5, provincia_cardenal_caro),
+        (estructura_comuna_id, 'Paredones', NULL, 6, provincia_cardenal_caro),
 
         -- Provincia de Colchagua
-        (estructura_comuna_id, 'Comuna de San Fernando', NULL, 1, provincia_colchagua),
-        (estructura_comuna_id, 'Comuna de Chépica', NULL, 2, provincia_colchagua),
-        (estructura_comuna_id, 'Comuna de Chimbarongo', NULL, 3, provincia_colchagua),
-        (estructura_comuna_id, 'Comuna de Lolol', NULL, 4, provincia_colchagua),
-        (estructura_comuna_id, 'Comuna de Nancagua', NULL, 5, provincia_colchagua),
-        (estructura_comuna_id, 'Comuna de Palmilla', NULL, 6, provincia_colchagua),
-        (estructura_comuna_id, 'Comuna de Peralillo', NULL, 7, provincia_colchagua),
-        (estructura_comuna_id, 'Comuna de Placilla', NULL, 8, provincia_colchagua),
-        (estructura_comuna_id, 'Comuna de Pumanque', NULL, 9, provincia_colchagua),
-        (estructura_comuna_id, 'Comuna de Santa Cruz', NULL, 10, provincia_colchagua);
+        (estructura_comuna_id, 'San Fernando', NULL, 1, provincia_colchagua),
+        (estructura_comuna_id, 'Chépica', NULL, 2, provincia_colchagua),
+        (estructura_comuna_id, 'Chimbarongo', NULL, 3, provincia_colchagua),
+        (estructura_comuna_id, 'Lolol', NULL, 4, provincia_colchagua),
+        (estructura_comuna_id, 'Nancagua', NULL, 5, provincia_colchagua),
+        (estructura_comuna_id, 'Palmilla', NULL, 6, provincia_colchagua),
+        (estructura_comuna_id, 'Peralillo', NULL, 7, provincia_colchagua),
+        (estructura_comuna_id, 'Placilla', NULL, 8, provincia_colchagua),
+        (estructura_comuna_id, 'Pumanque', NULL, 9, provincia_colchagua),
+        (estructura_comuna_id, 'Santa Cruz', NULL, 10, provincia_colchagua);
 
 
     -- Insert comunas for Región del Maule
     INSERT INTO niveles_administrativos (estructura_nivel_id, nombre, numeracion, orden, padre_id)
     VALUES
         -- Provincia de Talca
-        (estructura_comuna_id, 'Comuna de Talca', NULL, 1, provincia_talca),
-        (estructura_comuna_id, 'Comuna de Constitución', NULL, 2, provincia_talca),
-        (estructura_comuna_id, 'Comuna de Curepto', NULL, 3, provincia_talca),
-        (estructura_comuna_id, 'Comuna de Empedrado', NULL, 4, provincia_talca),
-        (estructura_comuna_id, 'Comuna de Maule', NULL, 5, provincia_talca),
-        (estructura_comuna_id, 'Comuna de Pelarco', NULL, 6, provincia_talca),
-        (estructura_comuna_id, 'Comuna de Pencahue', NULL, 7, provincia_talca),
-        (estructura_comuna_id, 'Comuna de Río Claro', NULL, 8, provincia_talca),
-        (estructura_comuna_id, 'Comuna de San Clemente', NULL, 9, provincia_talca),
-        (estructura_comuna_id, 'Comuna de San Rafael', NULL, 10, provincia_talca),
+        (estructura_comuna_id, 'Talca', NULL, 1, provincia_talca),
+        (estructura_comuna_id, 'Constitución', NULL, 2, provincia_talca),
+        (estructura_comuna_id, 'Curepto', NULL, 3, provincia_talca),
+        (estructura_comuna_id, 'Empedrado', NULL, 4, provincia_talca),
+        (estructura_comuna_id, 'Maule', NULL, 5, provincia_talca),
+        (estructura_comuna_id, 'Pelarco', NULL, 6, provincia_talca),
+        (estructura_comuna_id, 'Pencahue', NULL, 7, provincia_talca),
+        (estructura_comuna_id, 'Río Claro', NULL, 8, provincia_talca),
+        (estructura_comuna_id, 'San Clemente', NULL, 9, provincia_talca),
+        (estructura_comuna_id, 'San Rafael', NULL, 10, provincia_talca),
 
         -- Provincia de Cauquenes
-        (estructura_comuna_id, 'Comuna de Cauquenes', NULL, 1, provincia_cauquenes),
-        (estructura_comuna_id, 'Comuna de Chanco', NULL, 2, provincia_cauquenes),
-        (estructura_comuna_id, 'Comuna de Pelluhue', NULL, 3, provincia_cauquenes),
+        (estructura_comuna_id, 'Cauquenes', NULL, 1, provincia_cauquenes),
+        (estructura_comuna_id, 'Chanco', NULL, 2, provincia_cauquenes),
+        (estructura_comuna_id, 'Pelluhue', NULL, 3, provincia_cauquenes),
 
         -- Provincia de Curicó
-        (estructura_comuna_id, 'Comuna de Curicó', NULL, 1, provincia_curico),
-        (estructura_comuna_id, 'Comuna de Hualañé', NULL, 2, provincia_curico),
-        (estructura_comuna_id, 'Comuna de Licantén', NULL, 3, provincia_curico),
-        (estructura_comuna_id, 'Comuna de Molina', NULL, 4, provincia_curico),
-        (estructura_comuna_id, 'Comuna de Rauco', NULL, 5, provincia_curico),
-        (estructura_comuna_id, 'Comuna de Romeral', NULL, 6, provincia_curico),
-        (estructura_comuna_id, 'Comuna de Sagrada Familia', NULL, 7, provincia_curico),
-        (estructura_comuna_id, 'Comuna de Teno', NULL, 8, provincia_curico),
-        (estructura_comuna_id, 'Comuna de Vichuquén', NULL, 9, provincia_curico),
+        (estructura_comuna_id, 'Curicó', NULL, 1, provincia_curico),
+        (estructura_comuna_id, 'Hualañé', NULL, 2, provincia_curico),
+        (estructura_comuna_id, 'Licantén', NULL, 3, provincia_curico),
+        (estructura_comuna_id, 'Molina', NULL, 4, provincia_curico),
+        (estructura_comuna_id, 'Rauco', NULL, 5, provincia_curico),
+        (estructura_comuna_id, 'Romeral', NULL, 6, provincia_curico),
+        (estructura_comuna_id, 'Sagrada Familia', NULL, 7, provincia_curico),
+        (estructura_comuna_id, 'Teno', NULL, 8, provincia_curico),
+        (estructura_comuna_id, 'Vichuquén', NULL, 9, provincia_curico),
 
         -- Provincia de Linares
-        (estructura_comuna_id, 'Comuna de Linares', NULL, 1, provincia_linares),
-        (estructura_comuna_id, 'Comuna de Colbún', NULL, 2, provincia_linares),
-        (estructura_comuna_id, 'Comuna de Longaví', NULL, 3, provincia_linares),
-        (estructura_comuna_id, 'Comuna de Parral', NULL, 4, provincia_linares),
-        (estructura_comuna_id, 'Comuna de Retiro', NULL, 5, provincia_linares),
-        (estructura_comuna_id, 'Comuna de San Javier', NULL, 6, provincia_linares),
-        (estructura_comuna_id, 'Comuna de Villa Alegre', NULL, 7, provincia_linares),
-        (estructura_comuna_id, 'Comuna de Yerbas Buenas', NULL, 8, provincia_linares);
+        (estructura_comuna_id, 'Linares', NULL, 1, provincia_linares),
+        (estructura_comuna_id, 'Colbún', NULL, 2, provincia_linares),
+        (estructura_comuna_id, 'Longaví', NULL, 3, provincia_linares),
+        (estructura_comuna_id, 'Parral', NULL, 4, provincia_linares),
+        (estructura_comuna_id, 'Retiro', NULL, 5, provincia_linares),
+        (estructura_comuna_id, 'San Javier', NULL, 6, provincia_linares),
+        (estructura_comuna_id, 'Villa Alegre', NULL, 7, provincia_linares),
+        (estructura_comuna_id, 'Yerbas Buenas', NULL, 8, provincia_linares);
 
     -- Insert comunas for Región de Ñuble
     INSERT INTO niveles_administrativos (estructura_nivel_id, nombre, numeracion, orden, padre_id)
     VALUES
         -- Provincia de Diguillín
-        (estructura_comuna_id, 'Comuna de Chillán', NULL, 1, provincia_diguillin),
-        (estructura_comuna_id, 'Comuna de Bulnes', NULL, 2, provincia_diguillin),
-        (estructura_comuna_id, 'Comuna de Chillán Viejo', NULL, 3, provincia_diguillin),
-        (estructura_comuna_id, 'Comuna de El Carmen', NULL, 4, provincia_diguillin),
-        (estructura_comuna_id, 'Comuna de Pemuco', NULL, 5, provincia_diguillin),
-        (estructura_comuna_id, 'Comuna de Pinto', NULL, 6, provincia_diguillin),
-        (estructura_comuna_id, 'Comuna de Quillón', NULL, 7, provincia_diguillin),
-        (estructura_comuna_id, 'Comuna de San Ignacio', NULL, 8, provincia_diguillin),
-        (estructura_comuna_id, 'Comuna de Yungay', NULL, 9, provincia_diguillin),
+        (estructura_comuna_id, 'Chillán', NULL, 1, provincia_diguillin),
+        (estructura_comuna_id, 'Bulnes', NULL, 2, provincia_diguillin),
+        (estructura_comuna_id, 'Chillán Viejo', NULL, 3, provincia_diguillin),
+        (estructura_comuna_id, 'El Carmen', NULL, 4, provincia_diguillin),
+        (estructura_comuna_id, 'Pemuco', NULL, 5, provincia_diguillin),
+        (estructura_comuna_id, 'Pinto', NULL, 6, provincia_diguillin),
+        (estructura_comuna_id, 'Quillón', NULL, 7, provincia_diguillin),
+        (estructura_comuna_id, 'San Ignacio', NULL, 8, provincia_diguillin),
+        (estructura_comuna_id, 'Yungay', NULL, 9, provincia_diguillin),
 
         -- Provincia de Itata
-        (estructura_comuna_id, 'Comuna de Quirihue', NULL, 1, provincia_itata),
-        (estructura_comuna_id, 'Comuna de Cobquecura', NULL, 2, provincia_itata),
-        (estructura_comuna_id, 'Comuna de Coelemu', NULL, 2, provincia_itata),
-        (estructura_comuna_id, 'Comuna de Ninhue', NULL, 3, provincia_itata),
-        (estructura_comuna_id, 'Comuna de Portezuelo', NULL, 4, provincia_itata),
-        (estructura_comuna_id, 'Comuna de Ránquil', NULL, 5, provincia_itata),
-        (estructura_comuna_id, 'Comuna de Trehuaco', NULL, 6, provincia_itata),
+        (estructura_comuna_id, 'Quirihue', NULL, 1, provincia_itata),
+        (estructura_comuna_id, 'Cobquecura', NULL, 2, provincia_itata),
+        (estructura_comuna_id, 'Coelemu', NULL, 2, provincia_itata),
+        (estructura_comuna_id, 'Ninhue', NULL, 3, provincia_itata),
+        (estructura_comuna_id, 'Portezuelo', NULL, 4, provincia_itata),
+        (estructura_comuna_id, 'Ránquil', NULL, 5, provincia_itata),
+        (estructura_comuna_id, 'Trehuaco', NULL, 6, provincia_itata),
 
         -- Provincia de Punilla
-        (estructura_comuna_id, 'Comuna de San Carlos', NULL, 1, provincia_punilla),
-        (estructura_comuna_id, 'Comuna de Coihueco', NULL, 2, provincia_punilla),
-        (estructura_comuna_id, 'Comuna de Ñiquén', NULL, 3, provincia_punilla),
-        (estructura_comuna_id, 'Comuna de San Fabián', NULL, 4, provincia_punilla),
-        (estructura_comuna_id, 'Comuna de San Nicolás', NULL, 5, provincia_punilla);
+        (estructura_comuna_id, 'San Carlos', NULL, 1, provincia_punilla),
+        (estructura_comuna_id, 'Coihueco', NULL, 2, provincia_punilla),
+        (estructura_comuna_id, 'Ñiquén', NULL, 3, provincia_punilla),
+        (estructura_comuna_id, 'San Fabián', NULL, 4, provincia_punilla),
+        (estructura_comuna_id, 'San Nicolás', NULL, 5, provincia_punilla);
 
     -- Insert comunas for Región del Biobío
     INSERT INTO niveles_administrativos (estructura_nivel_id, nombre, numeracion, orden, padre_id)
     VALUES
         -- Provincia de Concepción
-        (estructura_comuna_id, 'Comuna de Concepción', NULL, 1, provincia_concepcion),
-        (estructura_comuna_id, 'Comuna de Coronel', NULL, 2, provincia_concepcion),
-        (estructura_comuna_id, 'Comuna de Chiguayante', NULL, 3, provincia_concepcion),
-        (estructura_comuna_id, 'Comuna de Florida', NULL, 4, provincia_concepcion),
-        (estructura_comuna_id, 'Comuna de Hualqui', NULL, 5, provincia_concepcion),
-        (estructura_comuna_id, 'Comuna de Lota', NULL, 6, provincia_concepcion),
-        (estructura_comuna_id, 'Comuna de Penco', NULL, 7, provincia_concepcion),
-        (estructura_comuna_id, 'Comuna de San Pedro de la Paz', NULL, 8, provincia_concepcion),
-        (estructura_comuna_id, 'Comuna de Santa Juana', NULL, 9, provincia_concepcion),
-        (estructura_comuna_id, 'Comuna de Talcahuano', NULL, 10, provincia_concepcion),
-        (estructura_comuna_id, 'Comuna de Tomé', NULL, 11, provincia_concepcion),
-        (estructura_comuna_id, 'Comuna de Hualpén', NULL, 12, provincia_concepcion),
+        (estructura_comuna_id, 'Concepción', NULL, 1, provincia_concepcion),
+        (estructura_comuna_id, 'Coronel', NULL, 2, provincia_concepcion),
+        (estructura_comuna_id, 'Chiguayante', NULL, 3, provincia_concepcion),
+        (estructura_comuna_id, 'Florida', NULL, 4, provincia_concepcion),
+        (estructura_comuna_id, 'Hualqui', NULL, 5, provincia_concepcion),
+        (estructura_comuna_id, 'Lota', NULL, 6, provincia_concepcion),
+        (estructura_comuna_id, 'Penco', NULL, 7, provincia_concepcion),
+        (estructura_comuna_id, 'San Pedro de la Paz', NULL, 8, provincia_concepcion),
+        (estructura_comuna_id, 'Santa Juana', NULL, 9, provincia_concepcion),
+        (estructura_comuna_id, 'Talcahuano', NULL, 10, provincia_concepcion),
+        (estructura_comuna_id, 'Tomé', NULL, 11, provincia_concepcion),
+        (estructura_comuna_id, 'Hualpén', NULL, 12, provincia_concepcion),
 
         -- Provincia de Arauco
-        (estructura_comuna_id, 'Comuna de Lebu', NULL, 1, provincia_arauco),
-        (estructura_comuna_id, 'Comuna de Arauco', NULL, 2, provincia_arauco),
-        (estructura_comuna_id, 'Comuna de Cañete', NULL, 3, provincia_arauco),
-        (estructura_comuna_id, 'Comuna de Contulmo', NULL, 4, provincia_arauco),
-        (estructura_comuna_id, 'Comuna de Curanilahue', NULL, 5, provincia_arauco),
-        (estructura_comuna_id, 'Comuna de Los Álamos', NULL, 6, provincia_arauco),
-        (estructura_comuna_id, 'Comuna de Tirúa', NULL, 7, provincia_arauco),
+        (estructura_comuna_id, 'Lebu', NULL, 1, provincia_arauco),
+        (estructura_comuna_id, 'Arauco', NULL, 2, provincia_arauco),
+        (estructura_comuna_id, 'Cañete', NULL, 3, provincia_arauco),
+        (estructura_comuna_id, 'Contulmo', NULL, 4, provincia_arauco),
+        (estructura_comuna_id, 'Curanilahue', NULL, 5, provincia_arauco),
+        (estructura_comuna_id, 'Los Álamos', NULL, 6, provincia_arauco),
+        (estructura_comuna_id, 'Tirúa', NULL, 7, provincia_arauco),
 
         -- Provincia del Biobío
-        (estructura_comuna_id, 'Comuna de Los Ángeles', NULL, 1, provincia_bio_bio),
-        (estructura_comuna_id, 'Comuna de Antuco', NULL, 2, provincia_bio_bio),
-        (estructura_comuna_id, 'Comuna de Cabrero', NULL, 3, provincia_bio_bio),
-        (estructura_comuna_id, 'Comuna de Laja', NULL, 4, provincia_bio_bio),
-        (estructura_comuna_id, 'Comuna de Mulchén', NULL, 5, provincia_bio_bio),
-        (estructura_comuna_id, 'Comuna de Nacimiento', NULL, 6, provincia_bio_bio),
-        (estructura_comuna_id, 'Comuna de Negrete', NULL, 7, provincia_bio_bio),
-        (estructura_comuna_id, 'Comuna de Quilaco', NULL, 8, provincia_bio_bio),
-        (estructura_comuna_id, 'Comuna de Quilleco', NULL, 9, provincia_bio_bio),
-        (estructura_comuna_id, 'Comuna de San Rosendo', NULL, 10, provincia_bio_bio),
-        (estructura_comuna_id, 'Comuna de Santa Bárbara', NULL, 11, provincia_bio_bio),
-        (estructura_comuna_id, 'Comuna de Tucapel', NULL, 12, provincia_bio_bio),
-        (estructura_comuna_id, 'Comuna de Yumbel', NULL, 13, provincia_bio_bio),
-        (estructura_comuna_id, 'Comuna de Alto Biobío', NULL, 14, provincia_bio_bio);
+        (estructura_comuna_id, 'Los Ángeles', NULL, 1, provincia_bio_bio),
+        (estructura_comuna_id, 'Antuco', NULL, 2, provincia_bio_bio),
+        (estructura_comuna_id, 'Cabrero', NULL, 3, provincia_bio_bio),
+        (estructura_comuna_id, 'Laja', NULL, 4, provincia_bio_bio),
+        (estructura_comuna_id, 'Mulchén', NULL, 5, provincia_bio_bio),
+        (estructura_comuna_id, 'Nacimiento', NULL, 6, provincia_bio_bio),
+        (estructura_comuna_id, 'Negrete', NULL, 7, provincia_bio_bio),
+        (estructura_comuna_id, 'Quilaco', NULL, 8, provincia_bio_bio),
+        (estructura_comuna_id, 'Quilleco', NULL, 9, provincia_bio_bio),
+        (estructura_comuna_id, 'San Rosendo', NULL, 10, provincia_bio_bio),
+        (estructura_comuna_id, 'Santa Bárbara', NULL, 11, provincia_bio_bio),
+        (estructura_comuna_id, 'Tucapel', NULL, 12, provincia_bio_bio),
+        (estructura_comuna_id, 'Yumbel', NULL, 13, provincia_bio_bio),
+        (estructura_comuna_id, 'Alto Biobío', NULL, 14, provincia_bio_bio);
 
     -- Insert comunas for Región de La Araucanía
     INSERT INTO niveles_administrativos (estructura_nivel_id, nombre, numeracion, orden, padre_id)
     VALUES
         -- Provincia de Cautín
-        (estructura_comuna_id, 'Comuna de Temuco', NULL, 1, provincia_cautin),
-        (estructura_comuna_id, 'Comuna de Carahue', NULL, 2, provincia_cautin),
-        (estructura_comuna_id, 'Comuna de Cunco', NULL, 3, provincia_cautin),
-        (estructura_comuna_id, 'Comuna de Curarrehue', NULL, 4, provincia_cautin),
-        (estructura_comuna_id, 'Comuna de Freire', NULL, 5, provincia_cautin),
-        (estructura_comuna_id, 'Comuna de Galvarino', NULL, 6, provincia_cautin),
-        (estructura_comuna_id, 'Comuna de Gorbea', NULL, 7, provincia_cautin),
-        (estructura_comuna_id, 'Comuna de Lautaro', NULL, 8, provincia_cautin),
-        (estructura_comuna_id, 'Comuna de Loncoche', NULL, 9, provincia_cautin),
-        (estructura_comuna_id, 'Comuna de Melipeuco', NULL, 10, provincia_cautin),
-        (estructura_comuna_id, 'Comuna de Nueva Imperial', NULL, 11, provincia_cautin),
-        (estructura_comuna_id, 'Comuna de Padre Las Casas', NULL, 12, provincia_cautin),
-        (estructura_comuna_id, 'Comuna de Perquenco', NULL, 13, provincia_cautin),
-        (estructura_comuna_id, 'Comuna de Pitrufquén', NULL, 14, provincia_cautin),
-        (estructura_comuna_id, 'Comuna de Pucón', NULL, 15, provincia_cautin),
-        (estructura_comuna_id, 'Comuna de Saavedra', NULL, 16, provincia_cautin),
-        (estructura_comuna_id, 'Comuna de Teodoro Schmidt', NULL, 17, provincia_cautin),
-        (estructura_comuna_id, 'Comuna de Toltén', NULL, 18, provincia_cautin),
-        (estructura_comuna_id, 'Comuna de Vilcún', NULL, 19, provincia_cautin),
-        (estructura_comuna_id, 'Comuna de Villarrica', NULL, 20, provincia_cautin),
-        (estructura_comuna_id, 'Comuna de Cholchol', NULL, 21, provincia_cautin),
+        (estructura_comuna_id, 'Temuco', NULL, 1, provincia_cautin),
+        (estructura_comuna_id, 'Carahue', NULL, 2, provincia_cautin),
+        (estructura_comuna_id, 'Cunco', NULL, 3, provincia_cautin),
+        (estructura_comuna_id, 'Curarrehue', NULL, 4, provincia_cautin),
+        (estructura_comuna_id, 'Freire', NULL, 5, provincia_cautin),
+        (estructura_comuna_id, 'Galvarino', NULL, 6, provincia_cautin),
+        (estructura_comuna_id, 'Gorbea', NULL, 7, provincia_cautin),
+        (estructura_comuna_id, 'Lautaro', NULL, 8, provincia_cautin),
+        (estructura_comuna_id, 'Loncoche', NULL, 9, provincia_cautin),
+        (estructura_comuna_id, 'Melipeuco', NULL, 10, provincia_cautin),
+        (estructura_comuna_id, 'Nueva Imperial', NULL, 11, provincia_cautin),
+        (estructura_comuna_id, 'Padre Las Casas', NULL, 12, provincia_cautin),
+        (estructura_comuna_id, 'Perquenco', NULL, 13, provincia_cautin),
+        (estructura_comuna_id, 'Pitrufquén', NULL, 14, provincia_cautin),
+        (estructura_comuna_id, 'Pucón', NULL, 15, provincia_cautin),
+        (estructura_comuna_id, 'Saavedra', NULL, 16, provincia_cautin),
+        (estructura_comuna_id, 'Teodoro Schmidt', NULL, 17, provincia_cautin),
+        (estructura_comuna_id, 'Toltén', NULL, 18, provincia_cautin),
+        (estructura_comuna_id, 'Vilcún', NULL, 19, provincia_cautin),
+        (estructura_comuna_id, 'Villarrica', NULL, 20, provincia_cautin),
+        (estructura_comuna_id, 'Cholchol', NULL, 21, provincia_cautin),
 
         -- Provincia de Malleco
-        (estructura_comuna_id, 'Comuna de Angol', NULL, 1, provincia_malleco),
-        (estructura_comuna_id, 'Comuna de Collipulli', NULL, 2, provincia_malleco),
-        (estructura_comuna_id, 'Comuna de Curacautín', NULL, 3, provincia_malleco),
-        (estructura_comuna_id, 'Comuna de Ercilla', NULL, 4, provincia_malleco),
-        (estructura_comuna_id, 'Comuna de Lonquimay', NULL, 5, provincia_malleco),
-        (estructura_comuna_id, 'Comuna de Los Sauces', NULL, 6, provincia_malleco),
-        (estructura_comuna_id, 'Comuna de Lumaco', NULL, 7, provincia_malleco),
-        (estructura_comuna_id, 'Comuna de Purén', NULL, 8, provincia_malleco),
-        (estructura_comuna_id, 'Comuna de Renaico', NULL, 9, provincia_malleco),
-        (estructura_comuna_id, 'Comuna de Traiguén', NULL, 10, provincia_malleco),
-        (estructura_comuna_id, 'Comuna de Victoria', NULL, 11, provincia_malleco);
+        (estructura_comuna_id, 'Angol', NULL, 1, provincia_malleco),
+        (estructura_comuna_id, 'Collipulli', NULL, 2, provincia_malleco),
+        (estructura_comuna_id, 'Curacautín', NULL, 3, provincia_malleco),
+        (estructura_comuna_id, 'Ercilla', NULL, 4, provincia_malleco),
+        (estructura_comuna_id, 'Lonquimay', NULL, 5, provincia_malleco),
+        (estructura_comuna_id, 'Los Sauces', NULL, 6, provincia_malleco),
+        (estructura_comuna_id, 'Lumaco', NULL, 7, provincia_malleco),
+        (estructura_comuna_id, 'Purén', NULL, 8, provincia_malleco),
+        (estructura_comuna_id, 'Renaico', NULL, 9, provincia_malleco),
+        (estructura_comuna_id, 'Traiguén', NULL, 10, provincia_malleco),
+        (estructura_comuna_id, 'Victoria', NULL, 11, provincia_malleco);
 
     -- Insert comunas for Región de Los Ríos
     INSERT INTO niveles_administrativos (estructura_nivel_id, nombre, numeracion, orden, padre_id)
     VALUES
         -- Provincia de Valdivia
-        (estructura_comuna_id, 'Comuna de Valdivia', NULL, 1, provincia_valdivia),
-        (estructura_comuna_id, 'Comuna de Corral', NULL, 2, provincia_valdivia),
-        (estructura_comuna_id, 'Comuna de Lanco', NULL, 3, provincia_valdivia),
-        (estructura_comuna_id, 'Comuna de Los Lagos', NULL, 4, provincia_valdivia),
-        (estructura_comuna_id, 'Comuna de Máfil', NULL, 5, provincia_valdivia),
-        (estructura_comuna_id, 'Comuna de Mariquina', NULL, 6, provincia_valdivia),
-        (estructura_comuna_id, 'Comuna de Paillaco', NULL, 7, provincia_valdivia),
-        (estructura_comuna_id, 'Comuna de Panguipulli', NULL, 8, provincia_valdivia),
+        (estructura_comuna_id, 'Valdivia', NULL, 1, provincia_valdivia),
+        (estructura_comuna_id, 'Corral', NULL, 2, provincia_valdivia),
+        (estructura_comuna_id, 'Lanco', NULL, 3, provincia_valdivia),
+        (estructura_comuna_id, 'Los Lagos', NULL, 4, provincia_valdivia),
+        (estructura_comuna_id, 'Máfil', NULL, 5, provincia_valdivia),
+        (estructura_comuna_id, 'Mariquina', NULL, 6, provincia_valdivia),
+        (estructura_comuna_id, 'Paillaco', NULL, 7, provincia_valdivia),
+        (estructura_comuna_id, 'Panguipulli', NULL, 8, provincia_valdivia),
 
         -- Provincia del Ranco
-        (estructura_comuna_id, 'Comuna de La Unión', NULL, 1, provincia_ranco),
-        (estructura_comuna_id, 'Comuna de Futrono', NULL, 2, provincia_ranco),
-        (estructura_comuna_id, 'Comuna de Lago Ranco', NULL, 3, provincia_ranco),
-        (estructura_comuna_id, 'Comuna de Río Bueno', NULL, 4, provincia_ranco);
+        (estructura_comuna_id, 'La Unión', NULL, 1, provincia_ranco),
+        (estructura_comuna_id, 'Futrono', NULL, 2, provincia_ranco),
+        (estructura_comuna_id, 'Lago Ranco', NULL, 3, provincia_ranco),
+        (estructura_comuna_id, 'Río Bueno', NULL, 4, provincia_ranco);
 
     -- Insert comunas for Región de Los Lagos
     INSERT INTO niveles_administrativos (estructura_nivel_id, nombre, numeracion, orden, padre_id)
     VALUES
         -- Provincia de Llanquihue
-        (estructura_comuna_id, 'Comuna de Puerto Montt', NULL, 1, provincia_llanquihue),
-        (estructura_comuna_id, 'Comuna de Calbuco', NULL, 2, provincia_llanquihue),
-        (estructura_comuna_id, 'Comuna de Cochamó', NULL, 3, provincia_llanquihue),
-        (estructura_comuna_id, 'Comuna de Fresia', NULL, 4, provincia_llanquihue),
-        (estructura_comuna_id, 'Comuna de Frutillar', NULL, 5, provincia_llanquihue),
-        (estructura_comuna_id, 'Comuna de Los Muermos', NULL, 6, provincia_llanquihue),
-        (estructura_comuna_id, 'Comuna de Llanquihue', NULL, 7, provincia_llanquihue),
-        (estructura_comuna_id, 'Comuna de Maullín', NULL, 8, provincia_llanquihue),
-        (estructura_comuna_id, 'Comuna de Puerto Varas', NULL, 9, provincia_llanquihue),
+        (estructura_comuna_id, 'Puerto Montt', NULL, 1, provincia_llanquihue),
+        (estructura_comuna_id, 'Calbuco', NULL, 2, provincia_llanquihue),
+        (estructura_comuna_id, 'Cochamó', NULL, 3, provincia_llanquihue),
+        (estructura_comuna_id, 'Fresia', NULL, 4, provincia_llanquihue),
+        (estructura_comuna_id, 'Frutillar', NULL, 5, provincia_llanquihue),
+        (estructura_comuna_id, 'Los Muermos', NULL, 6, provincia_llanquihue),
+        (estructura_comuna_id, 'Llanquihue', NULL, 7, provincia_llanquihue),
+        (estructura_comuna_id, 'Maullín', NULL, 8, provincia_llanquihue),
+        (estructura_comuna_id, 'Puerto Varas', NULL, 9, provincia_llanquihue),
 
         -- Provincia de Chiloé
-        (estructura_comuna_id, 'Comuna de Castro', NULL, 1, provincia_chiloe),
-        (estructura_comuna_id, 'Comuna de Ancud', NULL, 2, provincia_chiloe),
-        (estructura_comuna_id, 'Comuna de Chonchi', NULL, 3, provincia_chiloe),
-        (estructura_comuna_id, 'Comuna de Curaco de Vélez', NULL, 4, provincia_chiloe),
-        (estructura_comuna_id, 'Comuna de Dalcahue', NULL, 5, provincia_chiloe),
-        (estructura_comuna_id, 'Comuna de Puqueldón', NULL, 6, provincia_chiloe),
-        (estructura_comuna_id, 'Comuna de Queilén', NULL, 7, provincia_chiloe),
-        (estructura_comuna_id, 'Comuna de Quellón', NULL, 8, provincia_chiloe),
-        (estructura_comuna_id, 'Comuna de Quemchi', NULL, 9, provincia_chiloe),
-        (estructura_comuna_id, 'Comuna de Quinchao', NULL, 10, provincia_chiloe),
+        (estructura_comuna_id, 'Castro', NULL, 1, provincia_chiloe),
+        (estructura_comuna_id, 'Ancud', NULL, 2, provincia_chiloe),
+        (estructura_comuna_id, 'Chonchi', NULL, 3, provincia_chiloe),
+        (estructura_comuna_id, 'Curaco de Vélez', NULL, 4, provincia_chiloe),
+        (estructura_comuna_id, 'Dalcahue', NULL, 5, provincia_chiloe),
+        (estructura_comuna_id, 'Puqueldón', NULL, 6, provincia_chiloe),
+        (estructura_comuna_id, 'Queilén', NULL, 7, provincia_chiloe),
+        (estructura_comuna_id, 'Quellón', NULL, 8, provincia_chiloe),
+        (estructura_comuna_id, 'Quemchi', NULL, 9, provincia_chiloe),
+        (estructura_comuna_id, 'Quinchao', NULL, 10, provincia_chiloe),
 
         -- Provincia de Osorno
-        (estructura_comuna_id, 'Comuna de Osorno', NULL, 1, provincia_osorno),
-        (estructura_comuna_id, 'Comuna de Puerto Octay', NULL, 2, provincia_osorno),
-        (estructura_comuna_id, 'Comuna de Purranque', NULL, 3, provincia_osorno),
-        (estructura_comuna_id, 'Comuna de Puyehue', NULL, 4, provincia_osorno),
-        (estructura_comuna_id, 'Comuna de Río Negro', NULL, 5, provincia_osorno),
-        (estructura_comuna_id, 'Comuna de San Juan de la Costa', NULL, 6, provincia_osorno),
-        (estructura_comuna_id, 'Comuna de San Pablo', NULL, 7, provincia_osorno),
+        (estructura_comuna_id, 'Osorno', NULL, 1, provincia_osorno),
+        (estructura_comuna_id, 'Puerto Octay', NULL, 2, provincia_osorno),
+        (estructura_comuna_id, 'Purranque', NULL, 3, provincia_osorno),
+        (estructura_comuna_id, 'Puyehue', NULL, 4, provincia_osorno),
+        (estructura_comuna_id, 'Río Negro', NULL, 5, provincia_osorno),
+        (estructura_comuna_id, 'San Juan de la Costa', NULL, 6, provincia_osorno),
+        (estructura_comuna_id, 'San Pablo', NULL, 7, provincia_osorno),
 
         -- Provincia de Palena
-        (estructura_comuna_id, 'Comuna de Chaitén', NULL, 1, provincia_palena),
-        (estructura_comuna_id, 'Comuna de Futaleufú', NULL, 2, provincia_palena),
-        (estructura_comuna_id, 'Comuna de Hualaihué', NULL, 3, provincia_palena),
-        (estructura_comuna_id, 'Comuna de Palena', NULL, 4, provincia_palena);
+        (estructura_comuna_id, 'Chaitén', NULL, 1, provincia_palena),
+        (estructura_comuna_id, 'Futaleufú', NULL, 2, provincia_palena),
+        (estructura_comuna_id, 'Hualaihué', NULL, 3, provincia_palena),
+        (estructura_comuna_id, 'Palena', NULL, 4, provincia_palena);
 
     -- Insert comunas for Región de Aysén del General Carlos Ibáñez del Campo
     INSERT INTO niveles_administrativos (estructura_nivel_id, nombre, numeracion, orden, padre_id)
     VALUES
         -- Provincia de Coyhaique
-        (estructura_comuna_id, 'Comuna de Coyhaique', NULL, 1, provincia_coyhaique),
-        (estructura_comuna_id, 'Comuna de Lago Verde', NULL, 2, provincia_coyhaique),
+        (estructura_comuna_id, 'Coyhaique', NULL, 1, provincia_coyhaique),
+        (estructura_comuna_id, 'Lago Verde', NULL, 2, provincia_coyhaique),
 
         -- Provincia de Aysén
-        (estructura_comuna_id, 'Comuna de Aysén', NULL, 1, provincia_aysen),
-        (estructura_comuna_id, 'Comuna de Cisnes', NULL, 2, provincia_aysen),
-        (estructura_comuna_id, 'Comuna de Guaitecas', NULL, 3, provincia_aysen),
+        (estructura_comuna_id, 'Aysén', NULL, 1, provincia_aysen),
+        (estructura_comuna_id, 'Cisnes', NULL, 2, provincia_aysen),
+        (estructura_comuna_id, 'Guaitecas', NULL, 3, provincia_aysen),
 
         -- Provincia de Capitán Prat
-        (estructura_comuna_id, 'Comuna de Cochrane', NULL, 1, provincia_capitan_prat),
-        (estructura_comuna_id, 'Comuna de O’Higgins', NULL, 2, provincia_capitan_prat),
-        (estructura_comuna_id, 'Comuna de Tortel', NULL, 3, provincia_capitan_prat),
+        (estructura_comuna_id, 'Cochrane', NULL, 1, provincia_capitan_prat),
+        (estructura_comuna_id, 'O’Higgins', NULL, 2, provincia_capitan_prat),
+        (estructura_comuna_id, 'Tortel', NULL, 3, provincia_capitan_prat),
 
         -- Provincia de General Carrera
-        (estructura_comuna_id, 'Comuna de Chile Chico', NULL, 1, provincia_gral_carrera),
-        (estructura_comuna_id, 'Comuna de Río Ibáñez', NULL, 2, provincia_gral_carrera);
+        (estructura_comuna_id, 'Chile Chico', NULL, 1, provincia_gral_carrera),
+        (estructura_comuna_id, 'Río Ibáñez', NULL, 2, provincia_gral_carrera);
 
     -- Insert comunas for Región de Magallanes y de la Antártica Chilena
     INSERT INTO niveles_administrativos (estructura_nivel_id, nombre, numeracion, orden, padre_id)
     VALUES
         -- Provincia de Magallanes
-        (estructura_comuna_id, 'Comuna de Punta Arenas', NULL, 1, provincia_magallanes),
-        (estructura_comuna_id, 'Comuna de Laguna Blanca', NULL, 2, provincia_magallanes),
-        (estructura_comuna_id, 'Comuna de Río Verde', NULL, 3, provincia_magallanes),
-        (estructura_comuna_id, 'Comuna de San Gregorio', NULL, 4, provincia_magallanes),
+        (estructura_comuna_id, 'Punta Arenas', NULL, 1, provincia_magallanes),
+        (estructura_comuna_id, 'Laguna Blanca', NULL, 2, provincia_magallanes),
+        (estructura_comuna_id, 'Río Verde', NULL, 3, provincia_magallanes),
+        (estructura_comuna_id, 'San Gregorio', NULL, 4, provincia_magallanes),
 
         -- Provincia de Antártica Chilena
-        (estructura_comuna_id, 'Comuna de Cabo de Hornos', NULL, 1, provincia_antartica_chilena),
-        (estructura_comuna_id, 'Comuna de Antártica', NULL, 2, provincia_antartica_chilena),
+        (estructura_comuna_id, 'Cabo de Hornos', NULL, 1, provincia_antartica_chilena),
+        (estructura_comuna_id, 'Antártica', NULL, 2, provincia_antartica_chilena),
 
         -- Provincia de Tierra del Fuego
-        (estructura_comuna_id, 'Comuna de Porvenir', NULL, 1, provincia_tierra_del_fuego),
-        (estructura_comuna_id, 'Comuna de Primavera', NULL, 2, provincia_tierra_del_fuego),
-        (estructura_comuna_id, 'Comuna de Timaukel', NULL, 3, provincia_tierra_del_fuego),
+        (estructura_comuna_id, 'Porvenir', NULL, 1, provincia_tierra_del_fuego),
+        (estructura_comuna_id, 'Primavera', NULL, 2, provincia_tierra_del_fuego),
+        (estructura_comuna_id, 'Timaukel', NULL, 3, provincia_tierra_del_fuego),
 
         -- Provincia de Última Esperanza
-        (estructura_comuna_id, 'Comuna de Puerto Natales', NULL, 1, provincia_ultima_esperanza),
-        (estructura_comuna_id, 'Comuna de Torres del Paine', NULL, 2, provincia_ultima_esperanza);
+        (estructura_comuna_id, 'Puerto Natales', NULL, 1, provincia_ultima_esperanza),
+        (estructura_comuna_id, 'Torres del Paine', NULL, 2, provincia_ultima_esperanza);
 
 
 -- Insert comunas for Región Metropolitana de Santiago
     INSERT INTO niveles_administrativos (estructura_nivel_id, nombre, numeracion, orden, padre_id)
     VALUES
         -- Provincia de Santiago
-        (estructura_comuna_id, 'Comuna de Santiago', NULL, 1, provincia_santiago),
-        (estructura_comuna_id, 'Comuna de Cerrillos', NULL, 2, provincia_santiago),
-        (estructura_comuna_id, 'Comuna de Cerro Navia', NULL, 3, provincia_santiago),
-        (estructura_comuna_id, 'Comuna de Conchalí', NULL, 4, provincia_santiago),
-        (estructura_comuna_id, 'Comuna de El Bosque', NULL, 5, provincia_santiago),
-        (estructura_comuna_id, 'Comuna de Estación Central', NULL, 6, provincia_santiago),
-        (estructura_comuna_id, 'Comuna de Huechuraba', NULL, 7, provincia_santiago),
-        (estructura_comuna_id, 'Comuna de Independencia', NULL, 8, provincia_santiago),
-        (estructura_comuna_id, 'Comuna de La Cisterna', NULL, 9, provincia_santiago),
-        (estructura_comuna_id, 'Comuna de La Florida', NULL, 10, provincia_santiago),
-        (estructura_comuna_id, 'Comuna de La Granja', NULL, 11, provincia_santiago),
-        (estructura_comuna_id, 'Comuna de La Pintana', NULL, 12, provincia_santiago),
-        (estructura_comuna_id, 'Comuna de La Reina', NULL, 13, provincia_santiago),
-        (estructura_comuna_id, 'Comuna de Las Condes', NULL, 14, provincia_santiago),
-        (estructura_comuna_id, 'Comuna de Lo Barnechea', NULL, 15, provincia_santiago),
-        (estructura_comuna_id, 'Comuna de Lo Espejo', NULL, 16, provincia_santiago),
-        (estructura_comuna_id, 'Comuna de Lo Prado', NULL, 17, provincia_santiago),
-        (estructura_comuna_id, 'Comuna de Macul', NULL, 18, provincia_santiago),
-        (estructura_comuna_id, 'Comuna de Maipú', NULL, 19, provincia_santiago),
-        (estructura_comuna_id, 'Comuna de Ñuñoa', NULL, 20, provincia_santiago),
-        (estructura_comuna_id, 'Comuna de Pedro Aguirre Cerda', NULL, 21, provincia_santiago),
-        (estructura_comuna_id, 'Comuna de Peñalolén', NULL, 22, provincia_santiago),
-        (estructura_comuna_id, 'Comuna de Providencia', NULL, 23, provincia_santiago),
-        (estructura_comuna_id, 'Comuna de Pudahuel', NULL, 24, provincia_santiago),
-        (estructura_comuna_id, 'Comuna de Quilicura', NULL, 25, provincia_santiago),
-        (estructura_comuna_id, 'Comuna de Quinta Normal', NULL, 26, provincia_santiago),
-        (estructura_comuna_id, 'Comuna de Recoleta', NULL, 27, provincia_santiago),
-        (estructura_comuna_id, 'Comuna de Renca', NULL, 28, provincia_santiago),
-        (estructura_comuna_id, 'Comuna de San Joaquín', NULL, 29, provincia_santiago),
-        (estructura_comuna_id, 'Comuna de San Miguel', NULL, 30, provincia_santiago),
-        (estructura_comuna_id, 'Comuna de San Ramón', NULL, 31, provincia_santiago),
-        (estructura_comuna_id, 'Comuna de Vitacura', NULL, 32, provincia_santiago),
+        (estructura_comuna_id, 'Santiago', NULL, 1, provincia_santiago),
+        (estructura_comuna_id, 'Cerrillos', NULL, 2, provincia_santiago),
+        (estructura_comuna_id, 'Cerro Navia', NULL, 3, provincia_santiago),
+        (estructura_comuna_id, 'Conchalí', NULL, 4, provincia_santiago),
+        (estructura_comuna_id, 'El Bosque', NULL, 5, provincia_santiago),
+        (estructura_comuna_id, 'Estación Central', NULL, 6, provincia_santiago),
+        (estructura_comuna_id, 'Huechuraba', NULL, 7, provincia_santiago),
+        (estructura_comuna_id, 'Independencia', NULL, 8, provincia_santiago),
+        (estructura_comuna_id, 'La Cisterna', NULL, 9, provincia_santiago),
+        (estructura_comuna_id, 'La Florida', NULL, 10, provincia_santiago),
+        (estructura_comuna_id, 'La Granja', NULL, 11, provincia_santiago),
+        (estructura_comuna_id, 'La Pintana', NULL, 12, provincia_santiago),
+        (estructura_comuna_id, 'La Reina', NULL, 13, provincia_santiago),
+        (estructura_comuna_id, 'Las Condes', NULL, 14, provincia_santiago),
+        (estructura_comuna_id, 'Lo Barnechea', NULL, 15, provincia_santiago),
+        (estructura_comuna_id, 'Lo Espejo', NULL, 16, provincia_santiago),
+        (estructura_comuna_id, 'Lo Prado', NULL, 17, provincia_santiago),
+        (estructura_comuna_id, 'Macul', NULL, 18, provincia_santiago),
+        (estructura_comuna_id, 'Maipú', NULL, 19, provincia_santiago),
+        (estructura_comuna_id, 'Ñuñoa', NULL, 20, provincia_santiago),
+        (estructura_comuna_id, 'Pedro Aguirre Cerda', NULL, 21, provincia_santiago),
+        (estructura_comuna_id, 'Peñalolén', NULL, 22, provincia_santiago),
+        (estructura_comuna_id, 'Providencia', NULL, 23, provincia_santiago),
+        (estructura_comuna_id, 'Pudahuel', NULL, 24, provincia_santiago),
+        (estructura_comuna_id, 'Quilicura', NULL, 25, provincia_santiago),
+        (estructura_comuna_id, 'Quinta Normal', NULL, 26, provincia_santiago),
+        (estructura_comuna_id, 'Recoleta', NULL, 27, provincia_santiago),
+        (estructura_comuna_id, 'Renca', NULL, 28, provincia_santiago),
+        (estructura_comuna_id, 'San Joaquín', NULL, 29, provincia_santiago),
+        (estructura_comuna_id, 'San Miguel', NULL, 30, provincia_santiago),
+        (estructura_comuna_id, 'San Ramón', NULL, 31, provincia_santiago),
+        (estructura_comuna_id, 'Vitacura', NULL, 32, provincia_santiago),
 
         -- Provincia de Cordillera
-        (estructura_comuna_id, 'Comuna de Puente Alto', NULL, 1, provincia_cordillera),
-        (estructura_comuna_id, 'Comuna de Pirque', NULL, 2, provincia_cordillera),
-        (estructura_comuna_id, 'Comuna de San José de Maipo', NULL, 3, provincia_cordillera),
+        (estructura_comuna_id, 'Puente Alto', NULL, 1, provincia_cordillera),
+        (estructura_comuna_id, 'Pirque', NULL, 2, provincia_cordillera),
+        (estructura_comuna_id, 'San José de Maipo', NULL, 3, provincia_cordillera),
 
         -- Provincia de Chacabuco
-        (estructura_comuna_id, 'Comuna de Colina', NULL, 1, provincia_chacabuco),
-        (estructura_comuna_id, 'Comuna de Lampa', NULL, 2, provincia_chacabuco),
-        (estructura_comuna_id, 'Comuna de Tiltil', NULL, 3, provincia_chacabuco),
+        (estructura_comuna_id, 'Colina', NULL, 1, provincia_chacabuco),
+        (estructura_comuna_id, 'Lampa', NULL, 2, provincia_chacabuco),
+        (estructura_comuna_id, 'Tiltil', NULL, 3, provincia_chacabuco),
 
         -- Provincia de Maipo
-        (estructura_comuna_id, 'Comuna de San Bernardo', NULL, 1, provincia_maipo),
-        (estructura_comuna_id, 'Comuna de Buin', NULL, 2, provincia_maipo),
-        (estructura_comuna_id, 'Comuna de Calera de Tango', NULL, 3, provincia_maipo),
-        (estructura_comuna_id, 'Comuna de Paine', NULL, 4, provincia_maipo),
+        (estructura_comuna_id, 'San Bernardo', NULL, 1, provincia_maipo),
+        (estructura_comuna_id, 'Buin', NULL, 2, provincia_maipo),
+        (estructura_comuna_id, 'Calera de Tango', NULL, 3, provincia_maipo),
+        (estructura_comuna_id, 'Paine', NULL, 4, provincia_maipo),
 
         -- Provincia de Melipilla
-        (estructura_comuna_id, 'Comuna de Melipilla', NULL, 1, provincia_melipilla),
-        (estructura_comuna_id, 'Comuna de Alhué', NULL, 2, provincia_melipilla),
-        (estructura_comuna_id, 'Comuna de Curacaví', NULL, 3, provincia_melipilla),
-        (estructura_comuna_id, 'Comuna de María Pinto', NULL, 4, provincia_melipilla),
-        (estructura_comuna_id, 'Comuna de San Pedro', NULL, 5, provincia_melipilla),
+        (estructura_comuna_id, 'Melipilla', NULL, 1, provincia_melipilla),
+        (estructura_comuna_id, 'Alhué', NULL, 2, provincia_melipilla),
+        (estructura_comuna_id, 'Curacaví', NULL, 3, provincia_melipilla),
+        (estructura_comuna_id, 'María Pinto', NULL, 4, provincia_melipilla),
+        (estructura_comuna_id, 'San Pedro', NULL, 5, provincia_melipilla),
 
         -- Provincia de Talagante
-        (estructura_comuna_id, 'Comuna de Talagante', NULL, 1, provincia_talagante),
-        (estructura_comuna_id, 'Comuna de El Monte', NULL, 2, provincia_talagante),
-        (estructura_comuna_id, 'Comuna de Isla de Maipo', NULL, 3, provincia_talagante),
-        (estructura_comuna_id, 'Comuna de Padre Hurtado', NULL, 4, provincia_talagante),
-        (estructura_comuna_id, 'Comuna de Peñaflor', NULL, 5, provincia_talagante);
+        (estructura_comuna_id, 'Talagante', NULL, 1, provincia_talagante),
+        (estructura_comuna_id, 'El Monte', NULL, 2, provincia_talagante),
+        (estructura_comuna_id, 'Isla de Maipo', NULL, 3, provincia_talagante),
+        (estructura_comuna_id, 'Padre Hurtado', NULL, 4, provincia_talagante),
+        (estructura_comuna_id, 'Peñaflor', NULL, 5, provincia_talagante);
+
+    CREATE VIEW geografia_chile AS
+    SELECT
+        regiones.id AS id_region,
+        regiones.numeracion AS numero_region,
+        regiones.nombre AS nombre_region,
+        provincias.id AS id_provincia,
+        provincias.nombre AS nombre_provincia,
+        comunas.id AS id_comuna,
+        comunas.nombre AS nombre_comuna,
+        LPAD(CAST(regiones.numeracion AS TEXT), 2, '0') || CAST(provincias.orden AS TEXT) || LPAD(CAST(comunas.orden AS TEXT), 2, '0') AS cut
+    FROM
+        (SELECT
+             *
+        FROM
+            niveles_administrativos
+        WHERE
+            estructura_nivel_id = (SELECT id FROM estructura_niveles WHERE pais_id = (SELECT id FROM paises WHERE codigo_iso = 'CL') AND nombre = 'Comuna'))  comunas
+        INNER JOIN
+        (SELECT
+             *
+        FROM
+            niveles_administrativos
+        WHERE
+            estructura_nivel_id = (SELECT id FROM estructura_niveles WHERE pais_id = (SELECT id FROM paises WHERE codigo_iso = 'CL') AND nombre = 'Provincia'))  provincias
+        ON comunas.padre_id = provincias.id
+        INNER JOIN
+        (SELECT
+             *
+        FROM
+            niveles_administrativos
+        WHERE
+            estructura_nivel_id = (SELECT id FROM estructura_niveles WHERE pais_id = (SELECT id FROM paises WHERE codigo_iso = 'CL') AND nombre = 'Región'))  regiones
+        ON provincias.padre_id = regiones.id
 
 END $$;
