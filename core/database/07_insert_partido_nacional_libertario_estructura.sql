@@ -10,6 +10,4 @@ VALUES
 (1, 'Coordinador Comunal', 'Responsable de la coordinación comunal', '2024-06-11', NULL),
 (1, 'Coordinador Distrital', 'Responsable de la coordinación distrital', '2024-06-11', NULL),
 (1, 'Coordinador Regional', 'Responsable de la coordinación regional', '2024-06-11', NULL),
-(1, 'Directiva Nacional', 'Miembro de la directiva nacional del partido', '2024-06-11', NULL),
-(1, 'Autoridad Electa', 'Miembro electo con representación política', '2024-06-11', NULL),
-(1, 'Auditor Externo', 'Responsable de auditorías externas', '2024-06-11', NULL);
+(1, 'Directiva Nacional', 'Miembro de la directiva nacional del partido', '2024-06-11', NULL);
