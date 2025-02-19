@@ -1,0 +1,32 @@
+version: '3.9'
+
+services:
+  db:
+    image: postgres:latest
+    container_name: aula_regia_db
+    restart: always
+    environment:
+      POSTGRES_DB: aula_regia
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: tu_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - pg_data:/var/lib/postgresql/data
+
+  app:
+    build: .
+    container_name: aula_regia_app
+    restart: always
+    depends_on:
+      - db
+    environment:
+      DATABASE_URL: postgresql://postgres:tu_password@db:5432/aula_regia
+    ports:
+      - "8000:8000"
+    volumes:
+      - .:/app
+    entrypoint: [ "python" ]
+    command: [ "main.py" ]
+volumes:
+  pg_data:

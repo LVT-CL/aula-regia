@@ -1,0 +1,25 @@
+# Archivos de entorno y credenciales
+.env
+core/config/.env
+core/config/*.json
+
+# Caché de Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+
+# Dependencias y entornos virtuales
+venv/
+*.sqlite3
+db.sqlite3
+
+# Archivos de logs y PyCharm
+*.log
+logs/
+.idea/
+
+
+# Archivos de Docker
+pg_data/
+*.pid
