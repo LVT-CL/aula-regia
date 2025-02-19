@@ -49,8 +49,7 @@ def load_var_planilla_telefonos(ruta_archivo, nombre_hoja):
     except Exception as e:
         print(f"Error: {e}")
 
-def
-    load_tmp_planilla_telefonos():
+# TODO: load_tmp_telefonos
 
 
 # load_var_planilla_telefonos("E:\\DataLake\\pnl\\telefonos\\telefonos_rm.xlsx", "Sheet1")

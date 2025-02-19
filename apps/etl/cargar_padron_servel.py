@@ -48,7 +48,7 @@ def load_var_padron_servel(ruta_archivo, nombre_hoja):
     except Exception as e:
         print(f"Error: {e}")
 
-def load_tmp_padron_servel(id_archivo)
+def load_tmp_padron_servel(id_archivo):
     try:
         # Cargar variables de entorno
         load_dotenv(dotenv_path='../../core/config/.env')
