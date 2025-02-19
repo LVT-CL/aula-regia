@@ -13,5 +13,5 @@ RUN pip install --no-cache-dir -r requirements.txt
 # Copia todo el código del proyecto al contenedor
 COPY . .
 
-# Define el comando por defecto (ajústalo si no usas Django)
-CMD ["gunicorn", "-b", "0.0.0.0:8000", "aula_regia.wsgi:application"]
+# Mantiene el contenedor activo sin ejecutar nada
+CMD ["tail", "-f", "/dev/null"]

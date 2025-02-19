@@ -26,7 +26,6 @@ services:
       - "8000:8000"
     volumes:
       - .:/app
-    entrypoint: [ "python" ]
-    command: [ "main.py" ]
+    tty: true  # Permite que el contenedor siga activo esperando comandos
 volumes:
   pg_data:
