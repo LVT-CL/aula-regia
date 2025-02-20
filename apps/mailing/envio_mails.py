@@ -21,7 +21,7 @@ def enviar_correo_bienvenida(destinatario, saludo, nombre, nombre_coordinador, t
 
     # Crea el objeto Mail
     mensaje = Mail(
-        from_email='metropolitana@nacionallibertario.cl',  # Cambia por tu correo remitente
+        from_email='metropolitana@nacionallibertario.cl',
         to_emails=destinatario
     )
 
@@ -83,5 +83,7 @@ def envio_bienvenida_nuevos_militantes():
 
     except Exception as e:
         print(f"Error: {e}")
+
+# enviar_correo_bienvenida('lucianovalenzuelat@gmail.com', 'Bienvenido', 'Luciano', 'Pepito','+569962345','999-K')
 
 envio_bienvenida_nuevos_militantes()

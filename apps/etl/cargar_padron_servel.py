@@ -73,4 +73,4 @@ def load_tmp_padron_servel(id_archivo):
     except Exception as e:
         print(f"Error: {e}")
 
-id_archivo = load_var_padron_servel("E:\\DataLake\\pnl\\padron_servel\\REGION METROPOLITANA 10 02 25.xlsx", 'Hoja1')
+id_archivo = load_var_padron_servel("/app/docs/servel/REGION METROPOLITANA 18 02 25.xlsx", 'Hoja1')

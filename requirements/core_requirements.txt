@@ -12,3 +12,6 @@ pandas
 sendgrid
 requests
 sqlalchemy
+gspread
+google-auth
+openpyxl

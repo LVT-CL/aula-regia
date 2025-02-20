@@ -4,7 +4,7 @@ SELECT
     "REGION.1" AS numero_region,
     CASE WHEN "DISTRITO" = '-' THEN NULL ELSE
         LTRIM(SUBSTRING("DISTRITO", 9)) END::INT AS numero_distrito,
-    "COMUNA" AS nombre_comuna,
+    INITCAP("COMUNA") AS nombre_comuna,
     CAST("RUN" AS VARCHAR(10)) || '-' || CAST("DV" AS VARCHAR(1)) AS RUT,
     "NOMBRES" AS nombre,
     "APELLIDO_PATERNO" AS apellido_paterno,
