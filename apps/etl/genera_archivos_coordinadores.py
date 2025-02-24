@@ -1,11 +1,9 @@
 import os
-import sendgrid
-from sendgrid.helpers.mail import Mail, Attachment, FileContent, FileName, FileType, Disposition
 import pandas as pd
 import psycopg2
 from psycopg2.extras import DictCursor
 from dotenv import load_dotenv
-import base64
+from apps.mailing.envio_mails import enviar_correo_planilla_coordinador_comunal
 
 # Cargar variables de entorno
 load_dotenv(dotenv_path='../../core/config/.env')
@@ -21,78 +19,96 @@ DB_CONFIG = {
 
 # Configuración de SendGrid
 SENDGRID_API_KEY = os.getenv("SENDGRID_API_KEY")
+SENDGRID_TEMPLATE_ID = "d-62462d5113664027a3d565973d0942e1"
 
 # Directorio donde se guardarán los archivos
 OUTPUT_DIR = "../mailing/tmp/militantes_por_comuna/"
 os.makedirs(OUTPUT_DIR, exist_ok=True)
 
-# Consulta SQL base
-QUERY = """
-SELECT * FROM pnl.militantes_zona WHERE numero_distrito = 10;
-"""
 
-# Conectar a PostgreSQL y ejecutar la consulta
-conn = psycopg2.connect(**DB_CONFIG)
-cursor = conn.cursor(cursor_factory=DictCursor)
-cursor.execute(QUERY)
-rows = cursor.fetchall()
+def generacion_envio_comunal(numero_distrito):
+    """
+    Genera archivos de militantes por comuna para un distrito específico y los envía por correo a los coordinadores correspondientes.
 
-# Convertir resultados en un DataFrame de Pandas
-df = pd.DataFrame(rows, columns=[desc[0] for desc in cursor.description])
+    :param numero_distrito: Número del distrito electoral a procesar.
+    """
+    # Consulta SQL base para obtener militantes por comuna
+    QUERY_MILITANTES = f"""
+    SELECT * FROM pnl.militantes_zona WHERE numero_distrito = {numero_distrito};
+    """
 
-# Cerrar conexión
-cursor.close()
-conn.close()
+    QUERY_FECHA = f"""
+    SELECT MAX(fecha_afiliacion) AS fecha_datos FROM pnl.militantes_zona WHERE numero_distrito = {numero_distrito};
+    """
 
-# Obtener valores únicos de comuna
-comunas_unicas = df["nombre_comuna"].unique()
-generated_files = []
+    # Consulta SQL para obtener los coordinadores por comuna
+    QUERY_COORDINADORES = """
+    SELECT c.nombre AS nombre_coordinador, c.email, cc.nombre_comuna
+    FROM pnl.coordinadores c
+    JOIN pnl.coordinador_comuna cc ON c.id = cc.coordinador_id;
+    """
 
-# Generar un archivo XLSX por cada comuna
-for comuna in comunas_unicas:
-    df_comuna = df[df["nombre_comuna"] == comuna]
+    # Conectar a PostgreSQL y ejecutar consultas
+    conn = psycopg2.connect(**DB_CONFIG)
+    cursor = conn.cursor(cursor_factory=DictCursor)
 
-    # Definir el nombre del archivo
-    file_name = f"{OUTPUT_DIR}militantes_{comuna.replace(' ', '_')}.xlsx"
+    # Obtener datos de militantes
+    cursor.execute(QUERY_MILITANTES)
+    rows = cursor.fetchall()
+    df = pd.DataFrame(rows, columns=[desc[0] for desc in cursor.description])
 
-    # Guardar el DataFrame en un archivo Excel
-    df_comuna.to_excel(file_name, index=False)
+    # Obtener datos de coordinadores
+    cursor.execute(QUERY_COORDINADORES)
+    coordinadores_data = cursor.fetchall()
 
-    generated_files.append(file_name)
-    print(f"✅ Archivo generado: {file_name}")
+    # Obtener la fecha de los datos
+    cursor.execute(QUERY_FECHA)
+    fecha_datos = cursor.fetchone()["fecha_datos"]
+    fecha_datos_string = fecha_datos.strftime("%d/%m/%Y")
 
-print("🚀 Todos los archivos XLSX han sido generados con éxito.")
+    # Cerrar conexión
+    cursor.close()
+    conn.close()
 
-# Enviar los archivos por correo con SendGrid
-def send_email(files):
-    sg = sendgrid.SendGridAPIClient(api_key=SENDGRID_API_KEY)
-    message = Mail(
-        from_email='metropolitana@nacionallibertario.cl',
-        to_emails='lucianovalenzuelat@gmail.com',
-        subject="Archivos de militantes por comuna",
-        plain_text_content="Adjunto encontrarás los archivos XLSX generados por comuna."
-    )
+    # Convertir datos de coordinadores en un diccionario
+    coordinadores = {row["nombre_comuna"]: {"nombre": row["nombre_coordinador"], "email": row["email"]} for row in
+                     coordinadores_data}
 
-    # Adjuntar archivos
-    for file_path in files:
-        with open(file_path, "rb") as attachment:
-            encoded_file = base64.b64encode(attachment.read()).decode()
-            file_name = os.path.basename(file_path)
+    for comuna in df["nombre_comuna"].unique():
 
-            attachment = Attachment(
-                file_content=FileContent(encoded_file),
-                file_type=FileType("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"),
-                file_name=FileName(file_name),
-                disposition=Disposition("attachment")
+        # Filtrar el DataFrame por comuna
+        df_comuna = df[df["nombre_comuna"] == comuna]
+
+        # Definir el nombre del archivo
+        file_name = f"{OUTPUT_DIR}militantes_{comuna.replace(' ', '_')}.xlsx"
+
+        # Guardar el DataFrame en un archivo Excel
+        df_comuna.to_excel(file_name, index=False)
+
+        print(f"✅ Archivo generado: {file_name}")
+
+        # Verificar si hay un coordinador asignado a la comuna
+        if comuna in coordinadores:
+            nombre_coordinador = coordinadores[comuna]["nombre"]
+            destinatario = coordinadores[comuna]["email"]
+
+            print(f"📧 Enviando correo a {nombre_coordinador} ({destinatario})")
+
+            # Enviar correo al coordinador con el archivo adjunto
+            enviar_correo_planilla_coordinador_comunal(
+                destinatario=destinatario,
+                nombre_coordinador=nombre_coordinador,
+                comuna=comuna,
+                fecha_datos=fecha_datos_string,
+                nombre_archivo=file_name
             )
-            message.attachment = attachment
 
-    # Enviar correo
-    try:
-        response = sg.send(message)
-        print(f"📧 Correo enviado alucianovalenzuelat@gmail.com. Status Code: {response.status_code}")
-    except Exception as e:
-        print(f"❌ Error enviando el correo: {e}")
+    print("🚀 Todos los correos han sido enviados con éxito.")
 
-# Ejecutar el envío de correo
-send_email(generated_files)
+
+
+
+# Llamada a la función con el distrito deseado (ejemplo: 10)
+if __name__ == "__main__":
+    distrito = 10  # Puedes cambiar este número según el distrito que quieras procesar
+    enviar_militantes_por_distrito(distrito)

@@ -2,7 +2,8 @@ import os
 import pandas as pd
 from dotenv import load_dotenv
 from sendgrid import SendGridAPIClient
-from sendgrid.helpers.mail import Mail
+from sendgrid.helpers.mail import Mail, Attachment, FileContent, FileName, FileType, Disposition
+import base64
 from sqlalchemy import create_engine, text
 
 # Cargar variables de entorno
@@ -44,7 +45,46 @@ def enviar_correo_bienvenida(destinatario, saludo, nombre, nombre_coordinador, t
     except Exception as e:
         print(f'Error al enviar el correo: {e}')
 
-def envio_bienvenida_nuevos_militantes():
+def enviar_correo_planilla_coordinador_comunal(destinatario, nombre_coordinador, comuna, fecha_datos, nombre_archivo):
+    # Reemplaza con tu API Key de SendGrid
+    SENDGRID_API_KEY = os.environ.get('SENDGRID_API_KEY')
+
+    # Crea el objeto Mail
+    mensaje = Mail(
+        from_email='metropolitana@nacionallibertario.cl',
+        to_emails=destinatario
+    )
+
+    # Asigna el ID de la plantilla dinámica
+    mensaje.template_id = 'd-62462d5113664027a3d565973d0942e1'
+
+    # Establece los datos dinámicos de la plantilla
+    mensaje.dynamic_template_data = {
+        'nombre_coordinador': nombre_coordinador,
+        'comuna': comuna,
+        'fecha_proceso': fecha_datos
+    }
+
+    # Adjuntar archivo
+    with open(nombre_archivo, "rb") as attachment:
+        encoded_file = base64.b64encode(attachment.read()).decode()
+        attachment = Attachment(
+            file_content=FileContent(encoded_file),
+            file_type=FileType("application/vnd.openxmlformats-officedocument.spreadsheetml.sheet"),
+            file_name=FileName(os.path.basename(nombre_archivo)),
+            disposition=Disposition("attachment")
+        )
+        mensaje.attachment = attachment
+
+    try:
+        sg = SendGridAPIClient(SENDGRID_API_KEY)
+        respuesta = sg.send(mensaje)
+        print(f'Correo enviado: {respuesta.status_code}')
+    except Exception as e:
+        print(f'Error al enviar el correo: {e}')
+
+
+def envio_bienvenida_nuevos_militantes(distrito):
     try:
         # Configuración de la base de datos
         connection_string = f'postgresql+psycopg2://{user}:{password}@{host}:{port}/{dbname}?options=-c%20search_path%3D{schema}'
@@ -52,16 +92,18 @@ def envio_bienvenida_nuevos_militantes():
         print("Cadena de conexión creada")
 
         # Consulta SQL
-        query = """            
+        query = f"""            
             SELECT
                 rut,
                 nombre,
-                correo_electronico AS email,
+                email,
                 saludo,
                 nombre_coordinador,
                 telefono_coordinador
             FROM
                 pnl.mail_bienvenida
+            WHERE
+                numero_distrito = {distrito};
         """
 
         # Cargar los datos en un DataFrame
@@ -84,6 +126,4 @@ def envio_bienvenida_nuevos_militantes():
     except Exception as e:
         print(f"Error: {e}")
 
-# enviar_correo_bienvenida('lucianovalenzuelat@gmail.com', 'Bienvenido', 'Luciano', 'Pepito','+569962345','999-K')
-
-envio_bienvenida_nuevos_militantes()
+envio_bienvenida_nuevos_militantes(8)

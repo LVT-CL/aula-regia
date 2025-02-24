@@ -156,22 +156,22 @@ BEGIN
 
 
     -- Fetch and store region identifiers in variables
-    SELECT id INTO region_arica FROM niveles_administrativos WHERE nombre = 'Región de Arica y Parinacota';
-    SELECT id INTO region_tarapaca FROM niveles_administrativos WHERE nombre = 'Región de Tarapacá';
-    SELECT id INTO region_antofagasta FROM niveles_administrativos WHERE nombre = 'Región de Antofagasta';
-    SELECT id INTO region_atacama FROM niveles_administrativos WHERE nombre = 'Región de Atacama';
-    SELECT id INTO region_coquimbo FROM niveles_administrativos WHERE nombre = 'Región de Coquimbo';
-    SELECT id INTO region_valparaiso FROM niveles_administrativos WHERE nombre = 'Región de Valparaíso';
-    SELECT id INTO region_metropolitana FROM niveles_administrativos WHERE nombre = 'Región Metropolitana de Santiago';
-    SELECT id INTO region_ohiggins FROM niveles_administrativos WHERE nombre = 'Región del Libertador General Bernardo O’Higgins';
-    SELECT id INTO region_maule FROM niveles_administrativos WHERE nombre = 'Región del Maule';
-    SELECT id INTO region_nuble FROM niveles_administrativos WHERE nombre = 'Región del Ñuble';
-    SELECT id INTO region_biobio FROM niveles_administrativos WHERE nombre = 'Región del Biobío';
-    SELECT id INTO region_araucania FROM niveles_administrativos WHERE nombre = 'Región de la Araucanía';
-    SELECT id INTO region_losrios FROM niveles_administrativos WHERE nombre = 'Región de Los Ríos';
-    SELECT id INTO region_loslagos FROM niveles_administrativos WHERE nombre = 'Región de Los Lagos';
-    SELECT id INTO region_aysen FROM niveles_administrativos WHERE nombre = 'Región de Aysén del General Carlos Ibáñez del Campo';
-    SELECT id INTO region_magallanes FROM niveles_administrativos WHERE nombre = 'Región de Magallanes y de la Antártica Chilena';
+    SELECT id INTO region_arica FROM unidades_administrativas WHERE nombre = 'Región de Arica y Parinacota';
+    SELECT id INTO region_tarapaca FROM unidades_administrativas WHERE nombre = 'Región de Tarapacá';
+    SELECT id INTO region_antofagasta FROM unidades_administrativas WHERE nombre = 'Región de Antofagasta';
+    SELECT id INTO region_atacama FROM unidades_administrativas WHERE nombre = 'Región de Atacama';
+    SELECT id INTO region_coquimbo FROM unidades_administrativas WHERE nombre = 'Región de Coquimbo';
+    SELECT id INTO region_valparaiso FROM unidades_administrativas WHERE nombre = 'Región de Valparaíso';
+    SELECT id INTO region_metropolitana FROM unidades_administrativas WHERE nombre = 'Región Metropolitana de Santiago';
+    SELECT id INTO region_ohiggins FROM unidades_administrativas WHERE nombre = 'Región del Libertador General Bernardo O’Higgins';
+    SELECT id INTO region_maule FROM unidades_administrativas WHERE nombre = 'Región del Maule';
+    SELECT id INTO region_nuble FROM unidades_administrativas WHERE nombre = 'Región del Ñuble';
+    SELECT id INTO region_biobio FROM unidades_administrativas WHERE nombre = 'Región del Biobío';
+    SELECT id INTO region_araucania FROM unidades_administrativas WHERE nombre = 'Región de la Araucanía';
+    SELECT id INTO region_losrios FROM unidades_administrativas WHERE nombre = 'Región de Los Ríos';
+    SELECT id INTO region_loslagos FROM unidades_administrativas WHERE nombre = 'Región de Los Lagos';
+    SELECT id INTO region_aysen FROM unidades_administrativas WHERE nombre = 'Región de Aysén del General Carlos Ibáñez del Campo';
+    SELECT id INTO region_magallanes FROM unidades_administrativas WHERE nombre = 'Región de Magallanes y de la Antártica Chilena';
 
     -- Insert provinces for each region
     -- Región de Arica y Parinacota
@@ -338,7 +338,7 @@ BEGIN
     -- Fetch and store province identifiers for Región de O'Higgins
     SELECT id INTO provincia_cachapoal FROM unidades_administrativas WHERE nombre = 'Provincia de Cachapoal';
     SELECT id INTO provincia_colchagua FROM unidades_administrativas WHERE nombre = 'Provincia de Colchagua';
-    SELECT id INTO provincia_cardenal_caro FROM unidades_administrativas WHERE nombre = 'Provincia Cardenal Caro';
+    SELECT id INTO provincia_cardenal_caro FROM unidades_administrativas WHERE nombre = 'Provincia de Cardenal Caro';
 
     -- Fetch and store province identifiers for Región del Maule
     SELECT id INTO provincia_talca FROM unidades_administrativas WHERE nombre = 'Provincia de Talca';

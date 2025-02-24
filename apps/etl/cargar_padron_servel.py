@@ -4,18 +4,15 @@ from datetime import datetime
 from sqlalchemy import create_engine
 import os
 from dotenv import load_dotenv
+import apps.etl.utilitarios as util
 
 def load_var_padron_servel(ruta_archivo, nombre_hoja):
     try:
-        # Cargar variables de entorno
-        load_dotenv(dotenv_path='../../core/config/.env')
-        print("Variables de entorno cargadas")
-
         # Configuración de la base de datos
         user = os.getenv('DB_USER')
         password = os.getenv('DB_PASSWORD')
         schema = os.getenv('DB_STAGING_SCHEMA', 'staging')
-        host = os.getenv('DB_HOST', 'localhost')
+        host = os.getenv('DB_HOST', 'db')
         port = os.getenv('DB_PORT', '5432')
         dbname = os.getenv('DB_NAME', 'aula-regia')
 
@@ -50,15 +47,11 @@ def load_var_padron_servel(ruta_archivo, nombre_hoja):
 
 def load_tmp_padron_servel(id_archivo):
     try:
-        # Cargar variables de entorno
-        load_dotenv(dotenv_path='../../core/config/.env')
-        print("Variables de entorno cargadas")
-
         # Configuración de la base de datos
         user = os.getenv('DB_USER')
         password = os.getenv('DB_PASSWORD')
         schema = os.getenv('DB_STAGING_SCHEMA', 'staging')
-        host = os.getenv('DB_HOST', 'localhost')
+        host = os.getenv('DB_HOST', 'db')
         port = os.getenv('DB_PORT', '5432')
         dbname = os.getenv('DB_NAME', 'aula-regia')
 
@@ -67,8 +60,19 @@ def load_tmp_padron_servel(id_archivo):
         engine = create_engine(connection_string)
         print("Cadena de conexión creada")
 
-        # Ejecutar Script de carga en SQL
-        
+        # Ejecutar Script de creación de particiones
+        print("Creando partición...")
+        util.ejecutar_sql_desde_archivo('/apps/etl/sql/create_partition_tmp_padron_servel.sql',
+                                        {'ID_ARCHIVO': id_archivo},
+                                        engine)
+        print("Partición creada")
+
+        print("Insertando registros en tabla tmp_padron_servel...")
+        util.ejecutar_sql_desde_archivo('/apps/etl/sql/insert_tmp_padron_servel.sql',
+                                        {'ID_ARCHIVO': id_archivo},
+                                        engine)
+        print("Registros insertados en tabla tmp_padron_servel")
+
 
     except Exception as e:
         print(f"Error: {e}")
